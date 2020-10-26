@@ -1,4 +1,4 @@
-const interval = setInterval(() => {
+const intervalAudioAmp = setInterval(() => {
 
 function amplifyMedia(mediaElem, multiplier) {
     var context = new (window.AudioContext || window.webkitAudioContext),
@@ -20,7 +20,7 @@ function amplifyMedia(mediaElem, multiplier) {
 }
   const header = document.querySelector("._1QUKR");
   if (header) {
-    clearInterval(interval);
+    clearInterval(intervalAudioAmp);
     const button = document.createElement("button");
 
     function handleVolumeRateStatus (rate) {
